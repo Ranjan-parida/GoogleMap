@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title></title>
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-libs = "sap.ui.commons,sap.m,sap.ui.table"
+			data-sap-ui-resourceroots='{"demoapp": "./"}'
+			
+			data-sap-ui-bindingSyntax = "complex"
+			>
+			
+		</script>
+		<!--//here i have gave google map api key-->
+			<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZy__OiL7vGXxuNHeV62KtqNs3h9RS2p0"
+           type="text/javascript"></script>
+		
+		<script>
+			var oView = new sap.ui.view({
+				id: "idMain",
+				type:"JS",
+				viewName:"demoapp.view.Main"
+			}).placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div id="content"></div>
+	</body>
+</html>
